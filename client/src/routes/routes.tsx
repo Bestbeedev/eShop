@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
-import App from "../App";
+import { HomeLayouts } from "../Layouts/HomeLayouts";
 
 export const routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   {
     path: "/",    
-    element: <App />,
+    element: <HomeLayouts />,
     children: [
       {
         path: "/home",
