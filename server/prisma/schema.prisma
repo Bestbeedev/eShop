@@ -90,6 +90,7 @@ model Inventory{
   product Product @relation(fields: [productId],references: [id])
 
 }
+
 enum InventoryStatus {
   ACTIVE
   OUT_OF_STOCK

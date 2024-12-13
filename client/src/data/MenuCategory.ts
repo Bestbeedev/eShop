@@ -1,10 +1,10 @@
 export const MenuCategory = [
   {
-    categoryName: "HOME",
+    categoryName: "Home",
     path: "/",
   },
   {
-    categoryName: "CATEGORIES",
+    categoryName: "Categories",
     path: "/",
     children: [
       {
@@ -54,7 +54,7 @@ export const MenuCategory = [
     ],
   },
   {
-    categoryName: "WOMEN'S",
+    categoryName: "Women's",
     path: "/",
     children: [
       {
@@ -70,7 +70,7 @@ export const MenuCategory = [
     ],
   },
   {
-    categoryName: "MEN'S",
+    categoryName: "Men's",
     path: "/",
     children: [
       {
@@ -86,7 +86,7 @@ export const MenuCategory = [
     ],
   },
   {
-    categoryName: "JEWELRY'S",
+    categoryName: "Jewelry's",
     path: "/",
     children: [
       {
@@ -102,7 +102,7 @@ export const MenuCategory = [
     ],
   },
   {
-    categoryName: "PERFUMES",
+    categoryName: "Perfumes",
     path: "/",
     children: [
       {
@@ -118,11 +118,11 @@ export const MenuCategory = [
     ],
   },
   {
-    categoryName: "BLOGS",
+    categoryName: "Blogs",
     path: "/",
   },
   {
-    categoryName: "HOT OFFERS",
+    categoryName: "Hot Offers",
     path: "/",
   },
 ];

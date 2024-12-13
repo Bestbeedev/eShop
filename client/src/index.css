@@ -6,14 +6,11 @@
   #style.css
 \*-----------------------------------*/
 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * colors
    */
@@ -64,26 +61,27 @@
    */
 
   --transition-timing: 0.2s ease;
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
 button {
   background: none;
@@ -92,13 +90,25 @@ button {
   cursor: pointer;
 }
 
-img, ion-icon, button, a { display: block; }
+img,
+ion-icon,
+button,
+a {
+  display: block;
+}
 
-span { display: inline-block; }
+span {
+  display: inline-block;
+}
 
 html {
-  font-family: "Poppins", sans-serif;
   overscroll-behavior: contain;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 10px;
 }
 
 input {
@@ -107,15 +117,26 @@ input {
   font: inherit;
 }
 
-input::placeholder { font: inherit; }
+input::placeholder {
+  font: inherit;
+}
 
-body { background: var(--white); }
+body {
+  font-size: 16px;
+  background: var(--white); 
+  line-height: 1.3;
+    font-family: 'Mier B','Proxima Nova','Helvetica Neue',Roboto,Helvetica,Arial,sans-serif;
+}
+
+   
 
 /**
  * scrollbar style
  */
 
-body::-webkit-scrollbar { width: 15px; }
+body::-webkit-scrollbar {
+  width: 15px;
+}
 
 body::-webkit-scrollbar-track {
   background: var(--white);
@@ -128,26 +149,28 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
-
-
-
-
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding: 0 15px; }
+.container {
+  padding: 0 15px;
+}
 
-.has-scrollbar { padding-bottom: 5px; }
+.has-scrollbar {
+  padding-bottom: 5px;
+}
 
 .has-scrollbar::-webkit-scrollbar {
   width: 12px; /* for vertical scroll */
   height: 12px; /* for horizontal scroll */
 }
 
-::-webkit-scrollbar-button{
+::-webkit-scrollbar-button {
   width: 1px;
 }
 
@@ -157,10 +180,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   border-radius: 20px;
 }
 
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 90%);
+}
 
-.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
-
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 80%);
+}
 
 .slick-slide {
   padding: 0 15px; /* Ajoute du padding entre les slides */
@@ -170,25 +196,134 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin: 0 -13px; /* Compense le padding ajouté aux slides */
 }
 
-
 /* Container principal du carrousel */
 .carousel-container {
   position: relative;
 }
 
 /*Progres bar*/
-progress::-webkit-progress-bar{
+progress::-webkit-progress-bar {
   background-color: rgba(122, 116, 116, 0.295);
   border-radius: 3px;
-  
-
 }
-progress::-webkit-progress-value{
-  background-color:  rgba(202, 73, 48, 0.481);  
+progress::-webkit-progress-value {
+  background-color: rgba(202, 73, 48, 0.481);
 }
 
-progress::-moz-progress-bar{
+progress::-moz-progress-bar {
   background-color: brown;
-  
 }
 
+@layer base {
+  :root {
+
+    --background: 0 0% 100%;
+
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+
+    --input: 214.3 31.8% 91.4%;
+
+    --ring: 222.2 84% 4.9%;
+
+    --chart-1: 12 76% 61%;
+
+    --chart-2: 173 58% 39%;
+
+    --chart-3: 197 37% 24%;
+
+    --chart-4: 43 74% 66%;
+
+    --chart-5: 27 87% 67%;
+
+    --radius: 0.5rem;
+  }
+  .dark {
+
+    --background: 222.2 84% 4.9%;
+
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+
+    --input: 217.2 32.6% 17.5%;
+
+    --ring: 212.7 26.8% 83.9%;
+
+    --chart-1: 220 70% 50%;
+
+    --chart-2: 160 60% 45%;
+
+    --chart-3: 30 80% 55%;
+
+    --chart-4: 280 65% 60%;
+
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

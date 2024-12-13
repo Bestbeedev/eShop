@@ -1,47 +1,47 @@
 export const ProductFirst = [
   {
     avatar: "../../src/assets/images/icons/shorts.svg",
-    name: "SHORTS & JEANS",
+    name: "Shorts & Jeans",
     total: 25,
   },
   {
     avatar: "../../src/assets/images/icons/tee.svg",
-    name: "T-SHIRTS",
+    name: "T-Shirts",
     total: 12,
   },
   {
     avatar: "../../src/assets/images/icons/jacket.svg",
-    name: "JACKET",
+    name: "Jacket",
     total: 53,
   },
   {
     avatar: "../../src/assets/images/icons/perfume.svg",
-    name: "PERFUMES",
+    name: "Perfumes",
     total: 10,
   },
   {
     avatar: "../../src/assets/images/icons/watch.svg",
-    name: "WATCH",
+    name: "Watch",
     total: 23,
   },
   {
     avatar: "../../src/assets/images/icons/coat.svg",
-    name: "WINTER WEAR",
+    name: "Winter Wear",
     total: 19,
   },
   {
     avatar: "../../src/assets/images/icons/dress.svg",
-    name: "DRESS & FROCK",
+    name: "Dress & Frock",
     total: 17,
   },
   {
     avatar: "../../src/assets/images/icons/glasses.svg",
-    name: "GLASSES & LIENS",
+    name: "Glasses & Liens",
     total: 12,
   },
   {
     avatar: "../../src/assets/images/icons/hat.svg",
-    name: "HAT & CAPS",
+    name: "Hat & Caps",
     total: 25,
   },
 ];

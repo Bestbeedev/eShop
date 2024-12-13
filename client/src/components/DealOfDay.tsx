@@ -20,12 +20,12 @@ type Props = {
 export const DealOfDay: React.FC<Props> = ({ data, title }) => {
 
   return (
-    <div className=" w-[70vw]">
+    <div className=" w-full max-md:w-full">
       <h1 className="text-xl font-medium border-b pb-3">{title}</h1>
-      <div className="flex flex-1 space-x-2 items-center  overflow-x-auto my-5  has-scrollbar gap-3 ">
+      <div className="flex flex-1 max-sm:flex-col max-sm:space-x-0 space-x-3 items-center  overflow-x-auto my-5  has-scrollbar gap-3 ">
         {data.map((item) => (
-          <div className="flex w-full" key={item.id}>
-            <div className="flex space-x-5 p-8  w-[70vw] items-center rounded-lg border">
+          <div className="flex  w-full" key={item.id}>
+            <div className="flex space-x-5 p-8 flex-col w-full items-center rounded-lg border">
               <div>
                 <img className="" src={item.avatar} alt="" />
               </div>
@@ -42,13 +42,13 @@ export const DealOfDay: React.FC<Props> = ({ data, title }) => {
                   <BiCart />
                   <button className="">ADD TO CART</button>
                 </span>
-                <div className="flex  text-sm justify-between">
-                  <div className="flex space-x-2">
-                    <h2>ALREADY SOLD:</h2>
+                <div className="flex text-sm max-sm:flex-col justify-between">
+                  <div className="flex w-full space-x-2">
+                    <h2>SOLD:</h2>
                     <h2 className="font-semibold">{item.sold}</h2>
                   </div>
-                  <div className="flex space-x-2">
-                    <h2>TOTAL STOCK:</h2>
+                  <div className="flex w-full space-x-2">
+                    <h2 className="">STOCK:</h2>
                     <h2 className="font-semibold">{item.total}</h2>
                   </div>
                 </div>

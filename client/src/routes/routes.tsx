@@ -1,15 +1,25 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/Home";
-import { HomeLayouts } from "../Layouts/HomeLayouts";
+import { AppLayouts } from "../Layouts/AppLayouts";
+import App from "../App";
+import Login from "../pages/Login";
+import Signup from "../pages/Signup";
 
 export const routes: ReturnType<typeof createBrowserRouter> = createBrowserRouter([
   {
-    path: "/",    
-    element: <HomeLayouts />,
+    path: "/",
+    element: <AppLayouts />,
     children: [
       {
-        path: "/home",
-        element: <Home />,
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
       },
     ],
   },

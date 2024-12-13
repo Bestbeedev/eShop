@@ -37,5 +37,5 @@ connectDb();
 
 const PORTS = process.env.DATABASE_PORTS;
 app.listen(PORTS, () => {
-  console.log("Serveur is listening on port 5000 ");
+  console.log("Serveur is listening on port 8000 ");
 });

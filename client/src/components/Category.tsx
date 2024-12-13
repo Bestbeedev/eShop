@@ -41,11 +41,11 @@ export const Category: React.FC<Props> = ({ data, title }) => {
   }, []);
 
   return (
-    <div>
-      <h1 className="text-xl font-medium">{title}</h1>
+    <div className="w-full">
+      <h1 className="text-xl font-semibold">{title}</h1>
       <div
         ref={detailsRef}
-        className="bg-slate-50 rounded-lg border my-5 md p-5 w-[280px]"
+        className="bg-gray-50 rounded-lg border my-5 md  p-8 w-full"
       >
         {data.map((item) => (
           <div
@@ -63,9 +63,9 @@ export const Category: React.FC<Props> = ({ data, title }) => {
                 showDetails === item.id ? "border-b pb-2" : ""
               }`}
             >
-              <div className="flex items-center space-x-2 ">
+              <div className="flex items-center space-x-3 ">
                 <img className="size-5" src={item.avatar} alt="" />
-                <h1>{item.category}</h1>
+                <h1 className="text-lg">{item.category}</h1>
               </div>
               {showDetails === item.id ? <PiMinus /> : <PiPlus />}
             </div>
